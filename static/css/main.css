@@ -93,6 +93,13 @@ header .feeds {
   padding-top: 9px;
 }
 
+header .feeds a {
+  display: block;
+  float: right;
+  padding-right: 5px;
+  width: 40px;
+}
+
 header .feeds a:hover,
 header .feeds a:active {
   text-decoration: none;
@@ -273,6 +280,13 @@ li.tag-1 { font-size: 175%; margin: 0 1em; }
 li.tag-2 { font-size: 150%; margin: 0 1em; }
 li.tag-3 { font-size: 125%; margin: 0 1em; }
 li.tag-4 { font-size: 110%; margin: 0 1em; }
+
+/* Pagination */
+
+.pagination {
+  width: 100px;
+  margin: 1em auto;
+}
 
 /* Responsive */
 

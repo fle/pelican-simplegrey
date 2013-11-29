@@ -5,8 +5,10 @@
 
 <h1>Posts categorized under: {{ category }}</h1>
 
-{% for article in articles %}
+{% for article in articles_page.object_list %}
   {% include 'article_summary.inc.html' %}
 {% endfor %}
+
+{% include 'pagination.inc.html' %}
 
 {% endblock %}
