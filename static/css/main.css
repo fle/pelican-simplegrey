@@ -102,7 +102,7 @@ header .feeds a {
 
 header .feeds a:hover,
 header .feeds a:active {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 header .pages {
