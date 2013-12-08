@@ -156,6 +156,12 @@ a:hover, a:active {
   color: #4271AE;
 }
 
+.literal {
+  font-size: 0.9em;
+  border: 1px solid #F0F0F0;
+  padding: 0px 5px;
+}
+
 pre {
   font-family: 'Source Code Pro',monospace;
   background: none repeat scroll 0 0 #F0F0F0;
@@ -244,22 +250,16 @@ ol.archive li .tags
   margin-right: 3px;
   padding-top: 4px;
 }
-.social a[href*='twitter.com'] + i:before {content: url('../images/icons/twitter.png'); }
-.social a[href*='linkedin.com'] + i:before {content: url('../images/icons/linkedin.png'); }
-.social a[href*='github.com'] + i:before {content: url('../images/icons/github.png'); }
-.social a[href*='google'] + i:before {content: url('../images/icons/google.png'); }
-
-/*
-.social a[href*='delicious.com']:before {content: url('../images/icons/delicious.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='digg.com']:before {content: url('../images/icons/digg.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='facebook.com']:before {content: url('../images/icons/facebook.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='atom.xml']:before {content: url('../images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='last.fm']:before, .social a[href*='lastfm.']:before {content: url('../images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='jamendo.com']:before {content: url('../images/icons/jamendo.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='rss.xml']:before {content: url('../images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
-.social a[href*='gitorious.org']:before {content: url('../images/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
-*/
+.social a[href*='twitter.com'] + i:before {content: url('../images/icons/twitter-18px.png'); }
+.social a[href*='linkedin.com'] + i:before {content: url('../images/icons/linkedin-18px.png'); }
+.social a[href*='github.com'] + i:before {content: url('../images/icons/github-18px.png'); }
+.social a[href*='google.com'] + i:before {content: url('../images/icons/google-18px.png'); }
+.social a[href*='delicious.com']:before {content: url('../images/icons/delicious-18px.png'); }
+.social a[href*='digg.com']:before {content: url('../images/icons/digg-18px.png'); }
+.social a[href*='facebook.com']:before {content: url('../images/icons/facebook-18px.png'); }
+.social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverfow-18px.png'); }
+.social a[href*='rss.xml']:before {content: url('../images/icons/feed-18px.png'); }
+.social a[href*='atom.xml']:before {content: url('../images/icons/feed-18px.png'); }
 
 
 /* Tag cloud */
