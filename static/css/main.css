@@ -187,6 +187,7 @@ hr {
 
 article.summary {
   margin-bottom: 40px;
+  clear: both;
 }
 
 article.summary > div {
