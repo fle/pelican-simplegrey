@@ -9,9 +9,9 @@
 	
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 		
-	<script type="text/javascript">
-      
-	</script>
+    {% if PELICAN_SIMPLEGREY_STICKY_SIDEBAR %}
+	  <script type="text/javascript" src="{{ SITEURL }}/theme/js/custom_scripts.js"></script>
+	{% endif %}
 
 	{% block scripts %}
 	{% endblock %}
@@ -55,7 +55,7 @@
 		  </div>	
 		  
 		  <div class="sidebar">
-		    <div class="sidebar-container {% if PELICAN_SIMPLEGREY_FIXED_SIDEBAR %}sidebar-container-fixed{% endif %}">
+		    <div class="sidebar-container" {% if PELICAN_SIMPLEGREY_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
   	          <nav>
 	            <h2>Categories</h2>
 	            <ul>

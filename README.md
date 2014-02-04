@@ -9,7 +9,7 @@
 
 ## Options ##
 
-``PELICAN_SIMPLEGREY_FIXED_SIDEBAR = True | False `` option allows you to set the sidebar fixed (following scroll)
+``PELICAN_SIMPLEGREY_STICKY_SIDEBAR = True | False `` option allows you to set the sidebar fixed (following scroll and fading out)
 
 ## Credits ##
 

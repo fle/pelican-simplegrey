@@ -38,6 +38,7 @@ body {
   text-align: left;
   padding: 0;
   min-width: 740px;
+  background: linear-gradient(0deg, #FFFFFF, #FEFEFE) repeat scroll 0% 0% transparent;
 }
 
 header {
@@ -67,13 +68,19 @@ header {
   /*border-right: 1px solid #d6d6d6;*/
 }
 
-.sidebar-container-fixed {
+#sidebar-container-fixed {
   position: fixed;
   top: 88px;
+  transition: opacity 3s ease-in-out 0s;
 }
 
-.sidebar-container-fixed:hover {
-  
+#sidebar-container-fixed.sticky {
+  opacity: 0.25;
+}
+
+#sidebar-container-fixed:hover {
+  opacity: 1;
+  transition: opacity 0s ease-in-out 0s;
 }
 
 footer {
@@ -109,6 +116,8 @@ header .feeds a {
   width: 40px;
 }
 
+header a.title:hover,
+header a.title:active,
 header .feeds a:hover,
 header .feeds a:active {
   border-bottom: none;
@@ -283,7 +292,7 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 
 @media (min-width: 1280px) {
   body {
-    margin: 0 16%;
+    margin: 0 20%;
   }
 }
 
