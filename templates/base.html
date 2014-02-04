@@ -6,8 +6,13 @@
 	<meta name="author" content="{{ AUTHOR }}">
 	
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 		
+	<script type="text/javascript">
+      
+	</script>
+
 	{% block scripts %}
 	{% endblock %}
 
@@ -50,38 +55,38 @@
 		  </div>	
 		  
 		  <div class="sidebar">
-
-	        <nav>
-	          <h2>Categories</h2>
-	          <ul>
-	            {% for cat, null in categories %}
-	              <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-	            {% endfor %}
-	          </ul>
-	        </nav>
-
-	        {% if SOCIAL %}
-	          <aside>
-	          <h2>Social</h2>
-			    <ul class="social">
-				  {% for name, link in SOCIAL %}
-				  <li><a href="{{ link }}">{{ name }}</a><i></i></li>
-				  {% endfor %}
-			    </ul>
-			  </aside>
-			{% endif %}
-
-	        {% if LINKS %}
-	          <aside>
-	            <h2>Blogroll</h2>
+		    <div class="sidebar-container {% if PELICAN_SIMPLEGREY_FIXED_SIDEBAR %}sidebar-container-fixed{% endif %}">
+  	          <nav>
+	            <h2>Categories</h2>
 	            <ul>
-	              {% for name, link in LINKS %}
-	                <li><a href="{{ link }}">{{ name }}</a></li>
+	              {% for cat, null in categories %}
+	                <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 	              {% endfor %}
 	            </ul>
-	          </aside>
-	        {% endif %}
+	          </nav>
 
+	          {% if SOCIAL %}
+	            <aside>
+	            <h2>Social</h2>
+			      <ul class="social">
+				    {% for name, link in SOCIAL %}
+				    <li><a href="{{ link }}">{{ name }}</a><i></i></li>
+				    {% endfor %}
+			      </ul>
+			    </aside>
+			  {% endif %}
+
+	          {% if LINKS %}
+	            <aside>
+	              <h2>Blogroll</h2>
+	              <ul>
+	                {% for name, link in LINKS %}
+	                  <li><a href="{{ link }}">{{ name }}</a></li>
+	                {% endfor %}
+	              </ul>
+	            </aside>
+	          {% endif %}
+	        </div>
 		  </div>
 
 	  </div>

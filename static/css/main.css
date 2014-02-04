@@ -9,6 +9,7 @@ Colors :
 
 /* Imports */
 
+@import url("tinytypo.css");
 @import url("pygment.css");
 
 
@@ -32,10 +33,9 @@ html {
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 0.9em;
   line-height: 150%;
   text-align: left;
-  color: #4D4D4C;
   padding: 0;
   min-width: 740px;
 }
@@ -45,6 +45,7 @@ header {
   height: 50px;
   line-height: 50px;
   padding: 0 1em;
+  margin-bottom: 1.5em;
 }
 
 .wrapper {
@@ -54,16 +55,25 @@ header {
 
 .content {
   display: table-cell;
-  border-left: 1px solid #d6d6d6;
-  border-right: 1px dotted #D6D6D6;
+  /*border-left: 1px solid #d6d6d6;*/
+  /*border-right: 1px dotted #D6D6D6;*/
   padding: 0 20px 1em 20px;
 }
 
 .sidebar {
   display: table-cell;
   width: 25%;
-  border-right: 1px solid #d6d6d6;
-  padding: 0 20px 1em 20px;
+  padding: 0 20px 1em 20px;  
+  /*border-right: 1px solid #d6d6d6;*/
+}
+
+.sidebar-container-fixed {
+  position: fixed;
+  top: 88px;
+}
+
+.sidebar-container-fixed:hover {
+  
 }
 
 footer {
@@ -82,6 +92,7 @@ header a {
 }
 
 header a.title {
+  color: #E5E5E3;
   font-size: 1.25em;
 }
 
@@ -89,8 +100,6 @@ header .feeds {
   float: right;
   text-align: right;
   width: 25%;
-  height: 41px;
-  padding-top: 9px;
 }
 
 header .feeds a {
@@ -119,19 +128,6 @@ header .pages a {
 
 /* Titles */
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Source Sans Pro",sans-serif;
-    font-weight: 400;
-    text-shadow: 0.1em 0.1em 0.1em #EFEFEF;
-    line-height: 125%;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-  padding: 0.7em 0 0.3em;
-}
-
 h1 a {
   color: inherit;
   border-bottom: none;
@@ -139,10 +135,6 @@ h1 a {
 
 
 /* Texts */
-
-p {
-  margin: 0.8em 0 0.5em;
-}
 
 a {
   text-decoration: none;
@@ -157,7 +149,6 @@ a:hover, a:active {
 }
 
 .literal {
-  font-size: 0.9em;
   border: 1px solid #F0F0F0;
   padding: 0px 5px;
 }
