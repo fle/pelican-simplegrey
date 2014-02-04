@@ -7,6 +7,10 @@
 ![screenshot](screenshot.png)
 
 
+## Options ##
+
+``PELICAN_SIMPLEGREY_FIXED_SIDEBAR = True | False `` option allows you to set the sidebar fixed (following scroll)
+
 ## Credits ##
 
 * Theme freely inspired by [vkvn](https://github.com/vkvn)
