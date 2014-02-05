@@ -56,6 +56,16 @@
 		  
 		  <div class="sidebar">
 		    <div class="sidebar-container" {% if PELICAN_SIMPLEGREY_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
+
+	          {% if PELICAN_SIMPLEGREY_ABOUT %}
+	            <aside>
+	              <h2>About</h2>
+			      <p>
+                    {{ PELICAN_SIMPLEGREY_ABOUT }}
+			      </p>
+			    </aside>
+			  {% endif %}
+
   	          <nav>
 	            <h2>Categories</h2>
 	            <ul>

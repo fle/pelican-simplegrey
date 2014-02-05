@@ -65,18 +65,6 @@ header {
   padding: 0 20px 1em 3%;  
 }
 
-#sidebar-container-fixed.sticky {
-  position: fixed;
-  top: 85px;
-  transition: opacity 3s ease-in-out 0s;
-  opacity: 0.25;
-}
-
-#sidebar-container-fixed:hover {
-  opacity: 1;
-  transition: opacity 0s ease-in-out 0s;
-}
-
 footer {
   border-top: 1px dotted #D6D6D6;
   line-height: 30px;
@@ -126,6 +114,22 @@ header .pages a {
 
 
 /* Sidebar */
+
+#sidebar-container-fixed.sticky {
+  position: fixed;
+  top: 85px;
+  transition: opacity 3s ease-in-out 0s;
+  opacity: 0.25;
+}
+
+#sidebar-container-fixed:hover {
+  opacity: 1;
+  transition: opacity 0s ease-in-out 0s;
+}
+
+.sidebar {
+  text-align: justify;
+}
 
 
 /* Titles */
