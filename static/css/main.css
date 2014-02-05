@@ -64,7 +64,7 @@ header {
 .sidebar {
   display: table-cell;
   width: 25%;
-  padding: 0 20px 1em 20px;  
+  padding: 0 20px 1em 2.5em;  
   /*border-right: 1px solid #d6d6d6;*/
 }
 
@@ -94,12 +94,11 @@ footer {
 /* Header */
 
 header a {
-  color: #E5E5E3;
+  color: #E5E5E3 !important;
   border-bottom: none;
 }
 
 header a.title {
-  color: #E5E5E3;
   font-size: 1.25em;
 }
 
