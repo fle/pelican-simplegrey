@@ -56,25 +56,19 @@ header {
 
 .content {
   display: table-cell;
-  /*border-left: 1px solid #d6d6d6;*/
-  /*border-right: 1px dotted #D6D6D6;*/
   padding: 0 20px 1em 20px;
 }
 
 .sidebar {
   display: table-cell;
   width: 25%;
-  padding: 0 20px 1em 2.5em;  
-  /*border-right: 1px solid #d6d6d6;*/
-}
-
-#sidebar-container-fixed {
-  position: fixed;
-  top: 88px;
-  transition: opacity 3s ease-in-out 0s;
+  padding: 0 20px 1em 3%;  
 }
 
 #sidebar-container-fixed.sticky {
+  position: fixed;
+  top: 85px;
+  transition: opacity 3s ease-in-out 0s;
   opacity: 0.25;
 }
 
