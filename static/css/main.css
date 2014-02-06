@@ -195,9 +195,8 @@ article.summary > div {
 article.full .metadata,
 article.summary .metadata {
   padding: 1%;  
-  border: 1px dotted #EFEFEF;
-  box-shadow: 0.1em 0.1em 0.1em #EFEFEF;
   font-style: italic;
+  text-align: right;
 }
 
 article.full .metadata {
@@ -212,8 +211,10 @@ article.summary .metadata {
   margin: 0 1% 2% 0 ;
 }
 
-.metadata p {
+.metadata p,
+.metadata address {
   margin: 0;
+  text-align: right;
 }
 
 /* Listings */
