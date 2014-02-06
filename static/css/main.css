@@ -42,7 +42,8 @@ body {
 }
 
 header {
-  background-color: #40403F;
+  border-top: 4px solid #4271AE;
+  border-bottom: 1px solid #D6D6D6;
   height: 50px;
   line-height: 50px;
   padding: 0 1em;
@@ -76,7 +77,6 @@ footer {
 /* Header */
 
 header a {
-  color: #E5E5E3 !important;
   border-bottom: none;
 }
 
@@ -88,6 +88,7 @@ header .feeds {
   float: right;
   text-align: right;
   width: 25%;
+  line-height: 40px;
 }
 
 header .feeds a {
@@ -97,8 +98,6 @@ header .feeds a {
   width: 40px;
 }
 
-header a.title:hover,
-header a.title:active,
 header .feeds a:hover,
 header .feeds a:active {
   border-bottom: none;
@@ -106,6 +105,7 @@ header .feeds a:active {
 
 header .pages {
   float: right;
+  padding-right: 20px;
 }
 
 header .pages a {
@@ -116,19 +116,16 @@ header .pages a {
 /* Sidebar */
 
 #sidebar-container-fixed.sticky {
+  padding-bottom: 100px;
   position: fixed;
   top: 85px;
   transition: opacity 3s ease-in-out 0s;
-  opacity: 0.25;
+  opacity: 0.2;
 }
 
 #sidebar-container-fixed:hover {
   opacity: 1;
   transition: opacity 0s ease-in-out 0s;
-}
-
-.sidebar {
-  text-align: justify;
 }
 
 
@@ -141,6 +138,10 @@ h1 a {
 
 
 /* Texts */
+
+p {
+  text-align: justify;
+}
 
 a {
   text-decoration: none;
