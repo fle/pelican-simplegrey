@@ -5,6 +5,9 @@
 	<title>{% block title %}{{ SITENAME }}{%endblock%}</title>	
 	<meta name="author" content="{{ AUTHOR }}">
 	
+	{% block extra_meta %}
+	{% endblock %}
+
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
 	
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
