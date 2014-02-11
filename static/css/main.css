@@ -288,6 +288,21 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
   margin: 1em auto;
 }
 
+/* Light TinyTypo overrides */
+
+/* box border color */
+.box {
+  border-color:#D6D6D6; /* #4271AE */
+}
+
+/* .box which contains only a list */
+.box.only-list ul,
+.box.only-list ol
+ {
+  margin-top: 0;
+}
+
+
 /* Responsive */
 
 @media (min-width: 1280px) {
