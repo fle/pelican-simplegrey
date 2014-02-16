@@ -27,7 +27,10 @@
     {% endif %}
 
 {% endfor %}
+
+{% if articles|length > 1 %}
           </ol>
         </div>
+{% endif %}
 
 {% endblock content %}
