@@ -7,6 +7,7 @@
 
   {% if PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT %}
 	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{ PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT }}">
 	<meta name="twitter:creator" content="@{{ PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT }}">
 	<meta name="twitter:title" content="{{ article.title }}">
 	<meta name="twitter:description" content="{{ article.summary|striptags }}">
