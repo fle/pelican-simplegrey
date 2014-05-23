@@ -3,20 +3,22 @@
 
 {% block extra_meta %}
 
-	<meta name="description" content="{{ article.summary|striptags }}">
+  <meta name="description" content="{{ article.summary|striptags }}">
 
-{% if PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT %}
+  {% if PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT %}
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:creator" content="@{{ PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT }}">
 	<meta name="twitter:title" content="{{ article.title }}">
 	<meta name="twitter:description" content="{{ article.summary|striptags }}">
+	<meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
 {% endif %}
+
 {% endblock %}
 
 
 {% block content %}
 	<article class="full">
-			
+		
 		<h1>{{ article.title }}</h1>
 		
 		{% include 'metadata.inc.html' %}
