@@ -29,10 +29,10 @@
 	  <header role="banner">
 	    <div class="feeds">
 	      {% if FEED_ALL_ATOM %}
-	        <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
+	        <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
 	      {% endif %}
           {% if FEED_ALL_RSS %}
-            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="rss feed"/></a>
+            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="rss feed"/></a>
           {% endif %}
 	    </div>
 	    {% if PAGES %}
