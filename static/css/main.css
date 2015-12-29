@@ -63,6 +63,12 @@ header {
     width: 100%;
 }
 
+.content .img-container small {
+    color: #A5A5A5;
+    display: block;
+    text-align: center;
+}
+
 .sidebar {
   display: table-cell;
   width: 25%;
