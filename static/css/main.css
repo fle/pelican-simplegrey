@@ -59,6 +59,16 @@ header {
   padding: 0 20px 1em 20px;
 }
 
+.content img {
+    width: 100%;
+}
+
+.content .img-container small {
+    color: #A5A5A5;
+    display: block;
+    text-align: center;
+}
+
 .sidebar {
   display: table-cell;
   width: 25%;
@@ -196,7 +206,7 @@ article.summary > div {
 
 article.full .metadata,
 article.summary .metadata {
-  padding: 1%;  
+  padding: 1%;
   border: 1px dotted #EFEFEF;
   box-shadow: 0.1em 0.1em 0.1em #EFEFEF;
   font-style: italic;
@@ -246,7 +256,7 @@ ol.archive li .tags
 
 .social a {}
 
-.social i { 
+.social i {
   float: left;
   margin-right: 3px;
   padding-top: 4px;
@@ -308,4 +318,3 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
     margin: 0 4%;
   }
 }
-
